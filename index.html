@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fahad Zia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fafaf9; --surface:#ffffff; --text:#1c1917; --muted:#57534e; --border:#e7e5e4;
+  --accent:#6d28d9; --accent2:#0ea5e9; --chip:#f3e8ff; --chip-text:#5b21b6;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0c0a09; --surface:#1c1917; --text:#fafaf9; --muted:#a8a29e; --border:#292524;
+    --accent:#a78bfa; --accent2:#38bdf8; --chip:#2e1f4d; --chip-text:#ddd6fe; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0c0a09; --surface:#1c1917; --text:#fafaf9; --muted:#a8a29e; --border:#292524;
+  --accent:#a78bfa; --accent2:#38bdf8; --chip:#2e1f4d; --chip-text:#ddd6fe; color-scheme:dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.65}
+.wrap{max-width:760px;margin:0 auto;padding:0 1.25rem}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0}
+nav .logo{font-weight:700;letter-spacing:-.02em}
+nav .links{display:flex;gap:1.25rem;font-size:.9rem}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--accent)}
+header.hero{padding:3.5rem 0 3rem}
+.tag{display:inline-block;font-size:.8rem;font-weight:600;color:var(--chip-text);background:var(--chip);padding:.3rem .75rem;border-radius:999px}
+h1{font-size:clamp(2.4rem,8vw,3.75rem);line-height:1.05;letter-spacing:-.035em;margin:1rem 0 1rem}
+h1 span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:1.15rem;color:var(--muted);max-width:34rem;margin:0}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+.btn{padding:.7rem 1.2rem;border-radius:10px;font-weight:600;font-size:.95rem;text-decoration:none;border:1px solid var(--border);color:var(--text);background:var(--surface)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn:hover{transform:translateY(-1px)}
+section{padding:2.5rem 0;border-top:1px solid var(--border)}
+h2{font-size:.85rem;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin:0 0 1.25rem}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:1.25rem 1.4rem;margin-bottom:.9rem}
+.card h3{margin:0 0 .2rem;font-size:1.05rem}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+.chips{display:flex;flex-wrap:wrap;gap:.6rem}
+.chip{padding:.5rem .95rem;border-radius:999px;border:1px solid var(--border);background:var(--surface);font-size:.92rem;font-weight:500}
+.chip.hl{background:var(--chip);color:var(--chip-text);border-color:transparent}
+.contact a{color:var(--text);text-decoration:none;font-weight:500;border-bottom:2px solid var(--accent2)}
+.contact li{margin-bottom:.6rem;list-style:none}
+.contact ul{padding:0;margin:0}
+.contact span{display:inline-block;min-width:5rem;color:var(--muted);font-size:.9rem}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.85rem;border-top:1px solid var(--border)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <div class="logo">Fahad Zia</div>
+    <div class="links"><a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
+  </nav>
+
+  <header class="hero">
+    <span class="tag">Computer Science Student</span>
+    <h1>Hi, I’m <span>Fahad Zia</span>.</h1>
+    <p class="lead">A CS student fascinated by how computer systems work, now growing into the software side of things.</p>
+    <div class="btns">
+      <a class="btn primary" href="#contact">Get in touch</a>
+      <a class="btn" href="#education">My education</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>Introduction</h2>
+    <p>I’m a first-year Computer Science student with a strong interest in computer systems. I’m now moving toward the software side as well, building up my coding skills and exploring how the two worlds connect.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="card">
+      <h3>BS Computer Science (BCS)</h3>
+      <p>FAST-NUCES · First year, currently enrolled</p>
+    </div>
+    <div class="card">
+      <h3>A Levels</h3>
+      <p>LGS, Johar Town, Lahore</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="chips">
+      <span class="chip hl">Microsoft Word</span>
+      <span class="chip hl">Microsoft Excel</span>
+      <span class="chip hl">PowerPoint</span>
+      <span class="chip hl">Google Docs</span>
+      <span class="chip">Basic coding</span>
+      <span class="chip">Computer systems</span>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <ul>
+      <li><span>Email</span><a href="mailto:therealfahad.z001@gmail.com">therealfahad.z001@gmail.com</a></li>
+      <li><span>Phone</span><a href="tel:+923004326963">0300 4326963</a></li>
+    </ul>
+  </section>
+
+  <footer>© Fahad Zia</footer>
+</div>
+</body>
+</html>
